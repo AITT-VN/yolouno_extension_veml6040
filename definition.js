@@ -56,7 +56,7 @@ Blockly.Blocks['veml6040_sensor_detect_color'] = {
             ["xanh lá", "green"],
             ["xanh lơ", "cyan"],
             ["xanh dương", "blue"],
-            ["hồng thẫm", "magenta"],
+            ["hồng thẫm", "magenta"]
           ]
         }
       ],
