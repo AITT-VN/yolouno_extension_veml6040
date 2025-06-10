@@ -118,11 +118,11 @@ class VEML6040Sensor:
 
         return int(ambientLightInLux)
 
-    def get_cct(self, offset):
+    def get_cct(self, offset = 0.5):
         red = self.get_red()
         green = self.get_green()
         blue = self.get_blue()
-
+        #offset 0.5 help cct non near-zero
         ccti = (float(red) - float(blue)) / float(green)
         ccti = ccti + offset
         cct = 4278.6 * pow(ccti, -1.2455)
